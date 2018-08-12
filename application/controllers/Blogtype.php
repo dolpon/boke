@@ -80,6 +80,7 @@ class BlogtypeController extends Yaf_Controller_Abstract {
 
         $alltypes = $this->blogtypemodel->alltypes();
         $futypes = $this->blogtypemodel->allfutype();
+        $this->getView()->assign("page", 0);
         $this->getView()->assign("types", $alltypes);
         $this->getView()->assign("futypes", $futypes);
 

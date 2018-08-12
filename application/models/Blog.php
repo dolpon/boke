@@ -85,6 +85,7 @@ class BlogModel
      */
     public function adminlist($offset = 20, $limit = 0, $where = '', $sort = '')
     {
+        $order = '';
         if($sort)
         {
             $order = $sort.',';
@@ -95,11 +96,10 @@ class BlogModel
             $where = "where ".$where;
         }
 
-        $sql = "select * from blog
-                order by {$order}id desc
-                {$where}
-                limit {$limit},{$offset}
-                ";
+        $sql = "select * from blog ".
+                "order by {$order}id desc".
+                " {$where} ".
+                "limit {$limit},{$offset}";
         $arr = $this->db->get_all($sql);
         return $arr;
     }

@@ -22,6 +22,7 @@ class TagModel
         $blogid = (int)$blogid;
         $key = cachekey(__FUNCTION__,$blogid);
         $data = $this->redis->hget(__CLASS__,$key);
+        $tags = '';
         if(is_bool($data) || $admin)
         {
             $sql = "select tagid from blogtag where blogid = {$blogid}";

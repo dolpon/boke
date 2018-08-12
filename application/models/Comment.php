@@ -118,6 +118,7 @@ class CommentModel
         $data = $this->redis->hget(__CLASS__,$key);
         if(is_bool($data) || $admin)
         {
+            $where = '';
             if($admin)
             {
                 $where = "replyid <= 0 and ";

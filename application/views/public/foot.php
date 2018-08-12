@@ -42,7 +42,7 @@
         </div>
         <footer>
             <div class="container-fluid" style="background-color: #546673;margin-top: 20px">
-                <p class="text-center " style="color: white">Copyright © 程序喵的博客 | <?=$back;?></p>
+                <p class="text-center " style="color: white">Copyright © kevin 的博客 | <?=$back;?></p>
             </div>
         </footer>
                 <!-- 登录窗口 -->

@@ -41,7 +41,7 @@
                         <a class="navbar-brand" id="logout" href="javascript:void(0)">
                             <img alt="Brand" style="width:35px;height:35px;margin-top:-8px;" src="<?=STATIC_PUBLIC?>public/images/logo.png">
                         </a>
-                        <a class="navbar-brand" href="<?=BASE_URL?>">程序喵的厨房</a>
+                        <a class="navbar-brand" href="<?=BASE_URL?>">Kevin</a>
                         <a class="navbar-brand" id="login" data-toggle="modal" data-target="#login_page">
                             <img alt="Brand" style="width:53px;height:35px;margin-top:-8px;" class="hidden-xs hidden-sm" src="<?=STATIC_PUBLIC?>public/images/logo2.png">
                         </a>
@@ -52,7 +52,6 @@
                         <ul class="nav navbar-nav">
                             <li role="presentation"><a href="<?=BASE_URL?>">博客</a></li>
                             <li role="presentation"><a href="<?=BASE_URL?>index/say">碎片</a></li>
-                            <li role="presentation"><a href="<?=BASE_URL?>index/cat">关于喵～</a></li>
                             <li role="presentation" class="admin"><a href="<?=BASE_URL?>blog/new">写一篇</a></li>
                             <li role="presentation" class="admin"><a href="<?=BASE_URL?>admin/index">后台</a></li>
                         </ul>

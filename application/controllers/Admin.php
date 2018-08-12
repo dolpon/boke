@@ -9,6 +9,7 @@ class AdminController extends Yaf_Controller_Abstract {
     public function init()
     {
         $this->catmodel = new CatModel();
+
         $this->session = Yaf_Session::getInstance();
 
         $actionname = $this->getRequest()->getActionName();

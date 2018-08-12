@@ -35,6 +35,7 @@ class BlogController extends Yaf_Controller_Abstract {
 
         $hottags = $this->tagmodel->hottags();
         $types = $this->blogtypemodel->alltypes();
+        $this->getView()->assign("admin", '');
         $this->getView()->assign("types", $types);
         $this->getView()->assign("hottags", $hottags);
         return TRUE;
